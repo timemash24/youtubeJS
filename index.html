@@ -4,8 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Youtube App</title>
-    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ce7ddc4e92.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <header class="headbar">
+      <div class="headbar__logo">
+        <a href=""><i class="fa-brands fa-youtube"></i>Youtube</a>
+      </div>
+      <div class="headbar__menu">
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+      </div>
+    </header>
+    <main>
+      <article class="main_video">
+        <video src="" type="video/mp4" controls></video>
+        <header class="video__header">
+          <div class="video__tag">
+            <span># 태그</span>
+          </div>
+          <div class="video__title">
+            <span>제목</span>
+            <a href="#"><i class="fa-solid fa-chevron-down"></i></a>
+          </div>
+          <div class="video__info">
+            <span>조회수</span>
+            <span>몇일전</span>
+            <span>인기순위</span>
+          </div>
+        </header>
+      </article>
+    </main>
+  </body>
 </html>

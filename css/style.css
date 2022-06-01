@@ -1,0 +1,79 @@
+:root {
+  --text-color: rgb(224, 224, 224);
+  --background-color: rgb(24, 24, 24);
+  --accent-color: rgb(55, 133, 200);
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+i {
+  padding-right: 0.2em;
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+video {
+  width: 100%;
+}
+
+.headbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 2rem;
+  padding: 1.3em 1em;
+}
+
+.headbar__logo {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+.headbar__logo i {
+  color: red;
+}
+
+.headbar__menu {
+  font-size: 1.5em;
+  padding-right: 2em;
+}
+
+.main_video {
+  width: 100%;
+}
+
+.video__header {
+  padding: 1em 1.5em;
+}
+
+.video__tag {
+  color: var(--accent-color);
+  margin-bottom: 0.5em;
+  font-size: 1em;
+}
+
+.video__title {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding-bottom: 0.5em;
+  font-size: 1.5em;
+}
+
+.video__title i {
+  font-size: 0.6em;
+}
+
+.video__info {
+  font-size: 0.9em;
+}
