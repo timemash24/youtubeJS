@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Raleway:wght@600&display=swap"
+      rel="stylesheet"
+    />
     <title>Youtube App</title>
     <script
       src="https://kit.fontawesome.com/ce7ddc4e92.js"
@@ -13,16 +17,119 @@
   </head>
   <body>
     <header class="headbar">
-      <div class="headbar__logo">
+      <div class="logo">
         <a href=""><i class="fa-brands fa-youtube"></i>Youtube</a>
       </div>
-      <div class="headbar__menu">
+      <div class="icons">
         <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
         <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
       </div>
     </header>
-    <main>
-      <video src="" type="video/mp4" controls></video>
+
+    <!-- Video Player -->
+    <section class="player">
+      <video src="video/cat.mp4" controls></video>
+    </section>
+
+    <div class="infoAndUpNext">
+      <!-- Video Info -->
+      <section class="info">
+        <!-- Metadata -->
+        <div class="metadata">
+          <ul class="hashtags">
+            <li># 태그1</li>
+            <li># 태그2</li>
+            <li># 태그3</li>
+          </ul>
+          <div class="titleAndButton">
+            <span class="title clamp"
+              >제목을얼마나길게써야되는건지모르겠지만일단주저리주저리한번써볼게요두줄이상이되야지테스트가능하니깐요제목을얼마나길게써야되는건지모르겠지만일단주저리주저리한번써볼게요두줄이상이되야지테스트가능하니깐요제목을얼마나길게써야되는건지모르겠지만일단주저리주저리한번써볼게요두줄이상이되야지테스트가능하니깐요</span
+            >
+            <button class="moreBtn">
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+          <span class="views">조회수 613회 7일전</span>
+          <!-- Actions -->
+          <ul class="actions">
+            <li>
+              <button>
+                <i class="active fa-solid fa-thumbs-up"></i><span>좋아요</span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <i class="fa-solid fa-thumbs-down"></i><span>싫어요</span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <i class="fa-solid fa-share"></i><span>공유</span>
+              </button>
+            </li>
+            <li>
+              <button><i class="fa-solid fa-plus"></i><span>저장</span></button>
+            </li>
+            <li>
+              <button><i class="fa-solid fa-flag"></i><span>신고</span></button>
+            </li>
+          </ul>
+          <!-- Channel Description -->
+          <div class="channel">
+            <div class="metadata">
+              <img src="img/channel_img.jpg" />
+              <div class="info">
+                <span class="name">채널명</span>
+                <span class="subscribers">구독자수</span>
+              </div>
+            </div>
+            <button class="subscribe">구독</button>
+          </div>
+        </div>
+      </section>
+      <!-- Up Next -->
+      <section class="upNext">
+        <span class="title">다음 동영상</span>
+        <ul>
+          <li class="item">
+            <div class="img"><img src="img/channel_img.jpg" alt="" /></div>
+            <div class="info">
+              <span class="title">제목1</span>
+              <span class="name">채널명</span>
+              <span class="views">조회수</span>
+            </div>
+            <button class="moreBtn">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </button>
+          </li>
+          <li class="item">
+            <div class="img"><img src="img/channel_img.jpg" alt="" /></div>
+            <div class="info">
+              <span class="title">제목2</span>
+              <span class="name">채널명</span>
+              <span class="views">조회수</span>
+            </div>
+            <button class="moreBtn">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </button>
+          </li>
+          <li class="item">
+            <div class="img"><img src="img/channel_img.jpg" alt="" /></div>
+            <div class="info">
+              <span class="title">제목3</span>
+              <span class="name">채널명</span>
+              <span class="views">조회수</span>
+            </div>
+            <button class="moreBtn">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </button>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <script src="js/main.js"></script>
+
+    <!-- <main>
       <div class="main_left">
         <article class="main_video">
           <header class="video__header">
@@ -104,7 +211,6 @@
           </section>
         </aside>
       </div>
-    </main>
-    <script src="js/titleSpread.js"></script>
+    </main> -->
   </body>
 </html>
