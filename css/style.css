@@ -21,17 +21,24 @@ a {
   color: var(--text-color);
 }
 
+main {
+  width: 100%;
+}
+
 video {
   width: 100%;
+}
+
+p {
+  color: var(--text-color);
 }
 
 .headbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
-  height: 2rem;
-  padding: 1.3em 1em;
+  height: 1.8rem;
+  padding: 1.3rem 1rem;
 }
 
 .headbar__logo {
@@ -45,7 +52,7 @@ video {
 
 .headbar__menu {
   font-size: 1.5em;
-  padding-right: 2em;
+  padding-right: 0.5em;
 }
 
 .main_video {
@@ -53,13 +60,14 @@ video {
 }
 
 .video__header {
-  padding: 1em 1.5em;
+  padding: 1rem 1.5rem;
+  height: 5rem;
 }
 
 .video__tag {
   color: var(--accent-color);
   margin-bottom: 0.5em;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 .video__title {
@@ -67,7 +75,7 @@ video {
   justify-content: space-between;
   text-align: center;
   padding-bottom: 0.5em;
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 
 .video__title i {
@@ -75,5 +83,102 @@ video {
 }
 
 .video__info {
+  font-size: 1em;
+}
+
+.video__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+  padding: 1.2rem 0.8rem;
+  margin-top: 1rem;
+}
+
+.video__menu button {
+  width: 6em;
+  height: 6em;
+  margin: 0em 1em;
+  background-color: var(--background-color);
+  border: 0;
+}
+
+.video__menu button i {
+  font-size: 2.5em;
+}
+
+.main_channel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 1rem;
+  margin: 0 0.7rem;
+  border-bottom: 0.01rem solid rgb(63, 63, 63);
+  border-top: 0.01rem solid rgb(63, 63, 63);
+}
+
+.channel__controls {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.main_channel img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 9rem;
+  margin: 1.2em 1.5em 2em 1.5em;
+}
+
+.channel__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.channel__info span:first-child {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.channel__info span:last-child {
   font-size: 0.9em;
+  padding-top: 0.2em;
+}
+
+.channel__subscribe {
+  font-size: 1.2em;
+}
+
+.next_video {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.8rem 1.5rem;
+}
+
+aside p {
+  padding-left: 1.5rem;
+}
+
+.next_video img {
+  width: 15rem;
+  padding-right: 1.5em;
+}
+
+.next_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0.5em;
+}
+
+.next_info span:first-child {
+  font-size: 1.5em;
+  padding-bottom: 0.5em;
+}
+
+.next_video i {
+  font-size: 1.3em;
+  padding: 0.7rem;
 }
