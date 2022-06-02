@@ -175,10 +175,34 @@ aside p {
 
 .next_info span:first-child {
   font-size: 1.5em;
+  width: 100%;
   padding-bottom: 0.5em;
+}
+
+.next_info span:last-child {
+  width: 100%;
 }
 
 .next_video i {
   font-size: 1.3em;
   padding: 0.7rem;
+}
+
+@media screen and (min-width: 65rem) {
+  .main_left {
+    display: flex;
+  }
+
+  .main_video {
+    width: 55%;
+  }
+
+  .next_video {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .next_video img {
+    width: 6rem;
+  }
 }

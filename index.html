@@ -22,86 +22,89 @@
       </div>
     </header>
     <main>
-      <article class="main_video">
-        <video src="" type="video/mp4" controls></video>
-        <header class="video__header">
-          <div class="video__tag">
-            <span># 태그</span>
+      <video src="" type="video/mp4" controls></video>
+      <div class="main_left">
+        <article class="main_video">
+          <header class="video__header">
+            <div class="video__tag">
+              <span># 태그</span>
+            </div>
+            <div class="video__title">
+              <span>제목</span>
+              <a id="spread" href="#"
+                ><i class="fa-solid fa-chevron-down"></i
+              ></a>
+            </div>
+            <div class="video__info">
+              <span>조회수</span>
+              <span>몇일전</span>
+              <span>인기순위</span>
+            </div>
+          </header>
+          <div class="video__menu">
+            <button class="menu_btn">
+              <i class="fa-solid fa-thumbs-up"></i>
+              <p>좋아요</p>
+            </button>
+            <button class="menu_btn">
+              <i class="fa-solid fa-thumbs-down"></i>
+              <p>싫어요</p>
+            </button>
+            <button class="menu_btn">
+              <i class="fa-solid fa-share"></i>
+              <p>공유</p>
+            </button>
+            <button class="menu_btn">
+              <i class="fa-solid fa-plus"></i>
+              <p>더보기</p>
+            </button>
+            <button class="menu_btn">
+              <i class="fa-solid fa-flag"></i>
+              <p>신고</p>
+            </button>
           </div>
-          <div class="video__title">
-            <span>제목</span>
-            <a class="more_info" href="#"
-              ><i class="fa-solid fa-chevron-down"></i
-            ></a>
-          </div>
-          <div class="video__info">
-            <span>조회수</span>
-            <span>몇일전</span>
-            <span>인기순위</span>
-          </div>
-        </header>
-        <div class="video__menu">
-          <button class="menu_btn">
-            <i class="fa-solid fa-thumbs-up"></i>
-            <p>좋아요</p>
-          </button>
-          <button class="menu_btn">
-            <i class="fa-solid fa-thumbs-down"></i>
-            <p>싫어요</p>
-          </button>
-          <button class="menu_btn">
-            <i class="fa-solid fa-share"></i>
-            <p>공유</p>
-          </button>
-          <button class="menu_btn">
-            <i class="fa-solid fa-plus"></i>
-            <p>더보기</p>
-          </button>
-          <button class="menu_btn">
-            <i class="fa-solid fa-flag"></i>
-            <p>신고</p>
-          </button>
-        </div>
-      </article>
-      <article class="main_channel">
-        <div class="channel__controls">
-          <a href="#"><img src="img/channel_img.jpg" /></a>
-          <div class="channel__info">
-            <span>채널명</span>
-            <span>구독자수</span>
-          </div>
-        </div>
-        <div class="channel__subscribe">
-          <a href="#">구독</a>
-        </div>
-      </article>
+          <section class="main_channel">
+            <div class="channel__controls">
+              <a href="#"><img src="img/channel_img.jpg" /></a>
+              <div class="channel__info">
+                <span>채널명</span>
+                <span>구독자수</span>
+              </div>
+            </div>
+            <div class="channel__subscribe">
+              <a href="#">구독</a>
+            </div>
+          </section>
+        </article>
+        <aside>
+          <p>다음 동영상</p>
+          <section class="next_video">
+            <img src="img/channel_img.jpg" />
+            <div class="next_info">
+              <span>제목1</span>
+              <span>채널명이길어봤자여기까지지</span>
+            </div>
+            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+          </section>
+          <section class="next_video">
+            <img src="img/channel_img.jpg" />
+            <div class="next_info">
+              <span>제목2</span>
+              <span>채널명이길어봤자여기까지지</span>
+            </div>
+            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+          </section>
+          <section class="next_video">
+            <img src="img/channel_img.jpg" />
+            <div class="next_info">
+              <span>제목3</span>
+              <span>채널명이길어봤자여기까지지</span>
+            </div>
+            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+          </section>
+        </aside>
+      </div>
     </main>
-    <aside>
-      <p>다음 동영상</p>
-      <section class="next_video">
-        <img src="img/channel_img.jpg" />
-        <div class="next_info">
-          <span>제목1</span>
-          <span>채널명이길어봤자여기까지지</span>
-        </div>
-        <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
-      </section>
-      <section class="next_video">
-        <img src="img/channel_img.jpg" />
-        <div class="next_info">
-          <span>제목2</span>
-          <span>채널명이길어봤자여기까지지</span>
-        </div>
-        <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
-      </section>
-      <section class="next_video">
-        <img src="img/channel_img.jpg" />
-        <div class="next_info">
-          <span>제목3</span>
-          <span>채널명이길어봤자여기까지지</span>
-        </div>
-        <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
-      </section>
-    </aside>
+    <script src="js/titleSpread.js"></script>
   </body>
 </html>
