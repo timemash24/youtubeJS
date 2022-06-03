@@ -80,6 +80,10 @@ body > .info {
   padding: var(--padding);
 }
 
+.info .metadata {
+  padding: var(--padding);
+}
+
 .info .metadata .hashtags {
   display: flex;
   font-size: var(--font-small);
@@ -108,6 +112,7 @@ body > .info {
 
 .info .metadata .titleAndButton .moreBtn {
   height: 100%;
+  color: var(--gray-light-color);
   transition: transform 300ms ease-in-out;
 }
 
@@ -117,14 +122,14 @@ body > .info {
 
 .info .views {
   font-size: var(--font-small);
-  color: var(--white-color);
+  color: var(--gray-light-color);
 }
 
 /* Action Buttons */
 .info .actions {
   display: flex;
   justify-content: space-around;
-  margin: var(--padding) 0;
+  margin: var(--padding) 0 calc(var(--padding) * 2) 0;
 }
 
 .info .actions button {
@@ -148,6 +153,7 @@ body > .info {
 .info .channel {
   display: flex;
   justify-content: space-between;
+  padding: calc(var(--padding) / 2) 0;
   border-top: 1px solid var(--gray-dark-color);
   border-bottom: 1px solid var(--gray-dark-color);
 }
@@ -168,7 +174,7 @@ body > .info {
 }
 
 .info .channel .metadata .info .name {
-  font-size: var(font-medium);
+  font-size: var(--font-medium);
 }
 
 .info .channel .metadata .info .subscribers {
@@ -178,6 +184,7 @@ body > .info {
 
 .info .channel .subscribe {
   text-transform: uppercase;
+  padding-right: var(--padding);
   color: var(--red-color);
   font-size: var(--font-medium);
 }
@@ -185,6 +192,7 @@ body > .info {
 /* Up Next */
 .upNext {
   padding: 0 var(--padding);
+  min-width: 300px;
 }
 
 .upNext > .title {
